@@ -2087,6 +2087,12 @@ then
 
   extra_mpi="$extra_pgi"
 
+elif test "$mpi_compiler" == ifx
+then
+  posix_module_mpi=posix_default
+
+  extra_mpi="$extra_ifort"
+
 elif test "$mpi_compiler" == ifort
 then
   posix_module_mpi=posix_default
